@@ -152,9 +152,9 @@ body {
 
 .text{
 	font-weight: 300;
-	font-size: 3vh;
+	font-size: 2.5vh;
 	letter-spacing: 0.01vw;
-	line-height: 5.5vh;
+	line-height: 5.25vh;
 	transform: scaleY(0.925);
 }
 
