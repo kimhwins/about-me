@@ -165,7 +165,8 @@ body {
 .skills-title {
 	margin-top: 7.5%;
 	margin-bottom: 2%;
-	font-size: 4vh;
+	font-size: 3vh;
+/*	text-transform: uppercase;*/
 }
 
 .row {
