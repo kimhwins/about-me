@@ -4,16 +4,8 @@
 }
 
 body {
-	padding: 0;
-	margin: 5%;
-	max-height: 100vh;
-	font-family: 'Overpass', sans-serif;
-	color: #4d4d4d;
-/*	background-image: url("images/background.jpg");
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-    background-position: right top;
-    background-size: cover;*/
+	padding: 0 0 5% 0;
+	margin: 0;
 }
 
 @keyframes fadeIn {
@@ -27,28 +19,82 @@ body {
     }
 }
 
+@font-face {
+    font-family: "Kollektif";
+    src: url("fonts/Kollektif.ttf");
+    src: url("fonts/kollektif-webfont.svg") format("svg"),
+    url("fonts/kollektif-webfont.eot") format("eot");
+}
+
+@font-face {
+    font-family: "Kollektif-Bold";
+    src: url("/fonts/Kollektif-Bold.ttf");
+    src: url('fonts/kollektif-bold-webfont.woff2') format('woff2'),
+         url('fonts/kollektif-bold-webfont.woff') format('woff'),
+         url("/fonts/kollektif-bold-webfont.svg") format("svg"),
+    	 url("/fonts/kollektif-bold-webfont.eot") format("eot");
+}
+
+.subtitle{
+	font-weight: 500;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12pt;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	color: #aaa;
+}
+
+.title{
+	font-family: 'Kollektif-Bold', sans-serif;
+	font-size: 18pt;
+	text-align: center;
+	margin-top: 1.5%;
+	letter-spacing: 0.02em;
+}
+
 .fadein{
     animation-name: fadeIn;
     animation-duration: 1.5s;
     animation-fill-mode: both;
 }
 
+.logo{
+	position:absolute;
+	top: 0;
+	left: 0;
+	margin: 3% 4.5%;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	font-size: 3.5vh;
+	color: #f48da0;
+	font-family: 'Kollektif-Bold', sans-serif;
+	z-index: 3;
+}
+
+.logo a{
+	color: #f48da0;
+	text-decoration: none;
+}
+
 .navigation{
-	margin-bottom: 20%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: flex;
+	margin: 3.5% 4.5%;
 	z-index: 3;
 }
 
 .navigation a{
-	font-family: 'Overpass', sans-serif;
-	color: #4d4d4d;
-	font-size: 2.75vh;
+	font-family: 'Montserrat', sans-serif;
+	color: #000;
+	font-size: 12pt;
 	text-decoration: none;
-	letter-spacing: 0.05vw;
-	margin: 0 3vw 0 0;
-}
-
-.nav-button {
-	transform: scaleY(0.925);
+	letter-spacing: 0.05em;
+	margin: 0 0.5vw 0 4.75vw;
+	text-transform: uppercase;
+	font-weight: 500;
 }
 
 .float{
@@ -59,81 +105,103 @@ body {
 	transform: translate(0, -5px);
 }
 
-.head{
-	margin-top: -10%;
-}
-
-.nav {
-	margin-top: -10%;
-}
-
-.left {
-	position: fixed;
-	left: 0;
-	top: 0;
-	height: 100vh;
-	width: 40vw;
-	z-index: 2;
-	display: flex;
-	align-items: center;
-  	justify-content: center;
-  	background: rgba(0, 0, 0, 0);
-}
-
-.right{
-	margin-left:37.5vw;
-	padding: 6.5% 0;
-	z-index: 1;
-		display: flex;
-	align-items: center;
-  	justify-content: center;
-}
-
-.container-1 {
-	margin-top: -2.5%; 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.container-2 {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
-#icon {
-	width: 25%;
-	height: auto;
-	margin-right: 2.5%;
-}
-
 .about{
-  flex: 0 1 auto;
-}
-
-.about * {
-  display: inline-block;
-  
+  left: 0;
+  top: 0;
 }
 
 .about img{
-	margin-top: 2.5%;
-  	height: 65vh;
+	display: inline-block;
+  	height: 560px;
 }
 
-.title{
-	font-size: 4vh;
-  	font-weight: 300;
-  	transform: scaleY(0.9);
-  	vertical-align: 50%;
-  	margin-left: 2.5%;
+.row {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 12% 9% 6.5% 9%;
 }
 
-.description-container{
-	text-align: center;
+.column-1{
+	width: 48%;
+}
+
+.column-2{
+	width: 52%;
+	padding-top: 5%;
+}
+
+.row-2{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: left;
+	padding: 0.5% 5% 1.5% 9%;
+}
+
+.row-2-column{
+	width: 33%;
+	padding-right: 2.5%;
+}
+
+.see-more{
+	font-family: 'Montserrat',sans-serif;
+	text-transform: uppercase;
+	font-weight: 500;
+	color: #f48da0;
+	font-size: 10pt;
+	letter-spacing: 0.05em;
+
+}
+
+.trivia-title{
+	text-transform: uppercase;
+	color: #f48da0;
+	font-family: 'Kollektif-Bold',sans-serif;
+		letter-spacing: 0.06em;
+		font-size: 14pt;
+}
+
+.trivia-description{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+			font-size: 11pt;
+	line-height: 1.65em;
+	margin-top: 5%;
+	letter-spacing: 0.02em;
+}
+
+#inspiration{
+	padding-left: 5%;
+}
+
+.image-row{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+		padding-left: 5%;
+		padding-top: 10%;
+}
+
+.image-row img{
+	width: 30px;
+	height: auto;
+
+}
+
+.image-column{
+	width: 15%;
+}
+
+#linkedin {
+	width: 25px;
+	height: auto;
+/*	margin-left: 5%;*/
+}
+
+#instagram {
+	width: 28px;
+	height: auto;
 }
 
 .description {
@@ -142,55 +210,24 @@ body {
   width: 80%;
 }
 
-#hi{
-	text-transform: uppercase;
-	font-size: 4.2vh;
-	letter-spacing: 0.05vw;
-	margin-bottom: 2.5%;
-	transform: scaleY(0.925);
-}
-
 .text{
+	padding-top: 9%;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 300;
-	font-size: 2.5vh;
-	letter-spacing: 0.01vw;
-	line-height: 5.25vh;
-	transform: scaleY(0.925);
+		font-size: 12pt;
+	line-height: 1.65em;
+	padding-left: 5%;
 }
 
-.regular{
+.text span{
+	color: #f48da0;
 	font-weight: 400;
 }
 
-.skills-title {
-	margin-top: 7.5%;
-	margin-bottom: 2%;
-	font-size: 3vh;
-/*	text-transform: uppercase;*/
-}
 
-.row {
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-}
 
-.column-1{
-	width: 25%;
-}
-
-.column-2 {
-	width: 75%;
-}
 
 @media (max-width: 785px) {
-	.column-1{
-		width: 35%;
-	}
-
-	.column-2 {
-		width: 65%;
-	}
 
 	.navigation a{
 		font-size: 3vh;
