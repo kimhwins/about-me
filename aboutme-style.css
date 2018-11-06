@@ -67,13 +67,13 @@ body {
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
 	font-size: 3.5vh;
-	color: #f48da0;
+	color: #FAB5BE;
 	font-family: 'Kollektif-Bold', sans-serif;
 	z-index: 3;
 }
 
 .logo a{
-	color: #f48da0;
+	color: #FAB5BE;
 	text-decoration: none;
 }
 
@@ -89,12 +89,20 @@ body {
 .navigation a{
 	font-family: 'Kollektif', sans-serif;
 	color: #000;
-	font-size: 12pt;
+	font-size: 11pt;
 	text-decoration: none;
 	letter-spacing: 0.06em;
-	margin: 0 0.5vw 0 4.75vw;
+	margin: 0 0.5vw 0 4vw;
 	text-transform: uppercase;
 	font-weight: 500;
+}
+
+#non-select{
+	color: #bebebe;
+}
+
+.last-nav{
+	margin-right: 0.5vw;
 }
 
 .float{
@@ -148,7 +156,7 @@ body {
 	font-family: 'Montserrat',sans-serif;
 	text-transform: uppercase;
 	font-weight: 500;
-	color: #f48da0;
+	color: #FAB5BE;
 	font-size: 10pt;
 	letter-spacing: 0.05em;
 
@@ -156,7 +164,7 @@ body {
 
 .trivia-title{
 	text-transform: uppercase;
-	color: #f48da0;
+	color: #FAB5BE;
 	font-family: 'Kollektif-Bold',sans-serif;
 		letter-spacing: 0.06em;
 		font-size: 14pt;
@@ -220,12 +228,12 @@ body {
 }
 
 .text span{
-	color: #f48da0;
+	color: #FAB5BE;
 	font-weight: 400;
 }
 
 a{
-		color: #f48da0;
+		color: #FAB5BE;
 	font-weight: 400;
 }
 
