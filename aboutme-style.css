@@ -188,7 +188,7 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 		padding-left: 5%;
-		padding-top: 10%;
+		padding-top: 7.5%;
 }
 
 .image-row img{
@@ -229,7 +229,7 @@ body {
 
 .text span{
 	color: #FAB5BE;
-	font-weight: 400;
+	font-weight: 500;
 }
 
 a{
